@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI VTuber</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Using the versions from your working old project -->
+    <!-- 1. Live2D Cubism Core (assuming you have this locally in static/js/) -->
+    <script src="{{ url_for('static', filename='js/live2dcubismcore.min.js') }}"></script>
+
+    <!-- 2. PixiJS v7.4.2 from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.4.2/pixi.min.js"></script>
+
+    <!-- 3. pixi-live2d-display for Cubism 4 from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/pixi-live2d-display/dist/cubism4.min.js"></script>
+
+</head>
+<body>
+    <h1>Yuki Shinagawa</h1>
+
+    <div id="live2d-container" style="width: 600px; height: 750px; border: 1px solid rgba(255, 255, 255, 0.911); position: relative; margin: auto;"> <!-- Increased size, added margin:auto for centering -->
+        <canvas id="live2d-canvas" width="600" height="750"></canvas> <!-- Match container size -->
+    </div>
+
+    <div id="chat-area">
+        <div id="conversation">
+            <p><strong>AI:</strong> Hello! How can I assist you today?</p>
+        </div>
+        <input type="text" id="userInput" placeholder="Type your message...">
+        <button id="sendButton">Send</button>
+        <button id="voiceButton">Speak (Experimental)</button>
+    </div>
+
+    <!-- main.js at the end of the body -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
