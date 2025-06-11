@@ -10,6 +10,6 @@ GPU: RTX 2060 12GB VRAM+ ( AT LEAST 8GB VRAM TO RUN THE MODEL)
 
 HOW TO INSTALL?
   First install Ollama: https://ollama.com/
-  *Displaying Model: ( DOWNLOAD THEM)
+  *Displaying Model: ( DOWNLOAD THEM AND PUT IN JS FOLDER)
      https://www.patreon.com/posts/live-models-131241809?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link
   **
